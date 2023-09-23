@@ -21,9 +21,9 @@ class MovieCell: UITableViewCell {
         imgMovie.dm_setImage(posterPath: movieDetails.poster_path)
 
         var arrPlayListContained : [String] = []
-        let arrPlayLists : [String] = UserDefaults.standard.object(forKey: "PlayLists") as? [String] ?? []
+        let arrPlayLists = UserDefaults.standard.getPlayLists()
         for playList in arrPlayLists{
-            let arrids : [Int] = UserDefaults.standard.object(forKey: playList) as? [Int] ?? []
+            let arrids = UserDefaults.standard.getMoviesInPlayList(key: playList)
             if arrids.contains(movieDetails.id){
                 arrPlayListContained.append(playList)
             }

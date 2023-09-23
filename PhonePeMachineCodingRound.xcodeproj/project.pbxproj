@@ -17,6 +17,7 @@
 		BC8905C62ABED5AE0083CE90 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8905C52ABED5AE0083CE90 /* MovieDetails.swift */; };
 		BC8905CF2ABEDDDD0083CE90 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8905CE2ABEDDDD0083CE90 /* Utility.swift */; };
 		BC8905D22ABEE25B0083CE90 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8905D12ABEE25B0083CE90 /* UIImageView.swift */; };
+		BC8905D62ABEF0440083CE90 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8905D52ABEF0440083CE90 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BC8905C52ABED5AE0083CE90 /* MovieDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		BC8905CE2ABEDDDD0083CE90 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		BC8905D12ABEE25B0083CE90 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		BC8905D52ABEF0440083CE90 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8905D12ABEE25B0083CE90 /* UIImageView.swift */,
+				BC8905D52ABEF0440083CE90 /* UserDefaults.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				BC8905CF2ABEDDDD0083CE90 /* Utility.swift in Sources */,
 				BC8905A72ABED1E50083CE90 /* AppDelegate.swift in Sources */,
 				BC8905BC2ABED27C0083CE90 /* MovieCell.swift in Sources */,
+				BC8905D62ABEF0440083CE90 /* UserDefaults.swift in Sources */,
 				BC8905C62ABED5AE0083CE90 /* MovieDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

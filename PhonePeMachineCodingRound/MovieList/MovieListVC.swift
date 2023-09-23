@@ -53,7 +53,7 @@ extension MovieListVC: UITableViewDelegate, UITableViewDataSource{
     
     @objc func btnFavClicked(sender: UIButton){
         
-        let arrPlayLists:[String] = UserDefaults.standard.object(forKey: "PlayLists") as? [String] ?? []
+        let arrPlayLists = UserDefaults.standard.getPlayLists()
         
         let alertController = UIAlertController(title:"Select PlayList" , message: "", preferredStyle: .actionSheet)
         
@@ -63,7 +63,7 @@ extension MovieListVC: UITableViewDelegate, UITableViewDataSource{
                 UIAlertAction in
                 
                 if let movieDetails = self.arrMovies?[sender.tag]{
-                    var arrmovieids: [Int] = UserDefaults.standard.object(forKey: playList) as? [Int] ?? []
+                    var arrmovieids: [Int] = UserDefaults.standard.getMoviesInPlayList(key: playList)
                     arrmovieids.append(movieDetails.id)
                     UserDefaults.standard.set(arrmovieids, forKey: playList)
                     self.tblMovies.reloadData()
