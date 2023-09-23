@@ -11,7 +11,7 @@ import UIKit
 extension UIImageView {
     
     func dm_setImage(posterPath: String) {
-        let imageURL = URL(string: "https://image.tmdb.org/t/p/w185/\(posterPath)")
+        let imageURL = URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath)")
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageURL!)
             DispatchQueue.main.async {
